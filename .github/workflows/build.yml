@@ -44,3 +44,35 @@ jobs:
         with:
           name: Home
           path: dist
+
+  push-to-output-branch:
+    name: Push dist to output branch
+    runs-on: ubuntu-latest
+    needs: release
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v4.1.1
+
+      - name: Download artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: Home
+          path: dist
+
+      - name: Create orphan branch and add files
+        run: |
+          git checkout --orphan output
+          git rm -rf .
+          cp -r dist/* .
+          rm -rf dist
+
+      - name: Configure Git
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+
+      - name: Commit and push changes
+        run: |
+          git add .
+          git commit -m "Update output branch with dist files"
+          git push -f origin output
