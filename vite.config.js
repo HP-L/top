@@ -11,6 +11,8 @@ import viteCompression from "vite-plugin-compression";
 // https://vitejs.dev/config/
 export default ({ mode }) =>
   defineConfig({
+    // 新增 base 配置项
+    base: '/top/',
     plugins: [
       vue(),
       AutoImport({
@@ -47,7 +49,8 @@ export default ({ mode }) =>
           short_name: loadEnv(mode, process.cwd()).VITE_SITE_NAME,
           description: loadEnv(mode, process.cwd()).VITE_SITE_DES,
           display: "standalone",
-          start_url: "/",
+          // 这里 start_url 也建议改为 /top/，以匹配新的基础路径
+          start_url: '/top/',
           theme_color: "#424242",
           background_color: "#424242",
           icons: [
