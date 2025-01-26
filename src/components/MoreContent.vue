@@ -1,5 +1,5 @@
 <template>
-  <div class="more-content">您可在此编写任意内容</div>
+  <div class="more-content">凛冬已至，那是来自密西西比的寒暄...</div>
 </template>
 
 <style lang="scss" scoped>
