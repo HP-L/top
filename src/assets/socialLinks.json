@@ -1,19 +1,19 @@
 [
   {
     "name": "Github",
-    "icon": "/top/images/icon/github.png",
+    "icon": "/home/images/icon/github.png",
     "tip": "去 Github 看看",
     "url": "https://github.com/HP-L"
   },
   {
     "name": "QQ",
-    "icon": "/top/images/icon/qq.png",
+    "icon": "/home/images/icon/qq.png",
     "tip": "有什么事吗",
     "url": "https://res.abeim.cn/api/qq/?qq=1696634068"
   },
   {
     "name": "Email",
-    "icon": "/top/images/icon/email.png",
+    "icon": "/home/images/icon/email.png",
     "tip": "来封 Email ~",
     "url": "mailto:1696634068@qq.com"
   }
