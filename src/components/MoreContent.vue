@@ -1,5 +1,6 @@
 <template>
-  <div class="more-content">凛冬已至，那是来自密西西比的寒暄...</div>
+  <div class="more-content">春意盎然，绿叶是生命的旋律...</div>
+  <div class="more-content">（Ctrl+F5刷新）</div>
 </template>
 
 <style lang="scss" scoped>
