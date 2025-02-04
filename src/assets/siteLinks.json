@@ -8,5 +8,25 @@
     "icon": "Compass",
     "name": "起始页",
     "link": "https://zishu.is-cool.dev/home/"
+  },
+  {
+    "icon": "Book",
+    "name": "元器件之旅",
+    "link": "https://zishu.is-cool.dev/tags/元器件之旅/"
+  },
+  {
+    "icon": "Book",
+    "name": "专栏",
+    "link": "https://zishu.is-cool.dev/topic/"
+  },
+  {
+    "icon": "CompactDisc",
+    "name": "在线音游",
+    "link": "https://zishu.is-cool.dev/mikutap/"
+  },
+  {
+    "icon": "CompactDisc",
+    "name": "Deemo复刻",
+    "link": "https://zishu.is-cool.dev/deemo/"
   }
 ]
